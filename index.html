@@ -5,6 +5,16 @@
 <html dir="ltr" lang="zh-TW">
 <!--<![endif]-->
 <head>
+ <script type="Text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type='text/javascript'>
+$(function(){
+$("#clickme").click(function(){
+$("#cytus").toggle();
+});
+ });
+</script>
+
+    
     <title >Cytus歌曲分享By黃元宏
     </title>
     
@@ -12,11 +22,15 @@
     
     h1{
         color:white;
-        font-size: 50px
+        font-size: 40px
     }
     h2{
         color:white;
-        font-size: 30px
+        font-size: 24px
+    }
+    h3{
+        color:white;
+         font-size:15px
     }
     body{
         background-image: url(http://www.v3wall.com/wallpaper/1920_1080/1212/1920_1080_20121207124129386733.jpg)
@@ -32,7 +46,10 @@
 </head>
 
 <body>
-<center><h1>Cytus 歌曲分享 
+  
+    
+  
+        <center><h1>Cytus 歌曲分享 
     </h1></center>
     <center>\<iframe width="550" height="385" src="https://www.youtube.com/embed/WdWPUKDIueg" frameborder="0" allowfullscreen></iframe>  
          <br>
@@ -45,12 +62,12 @@
 <div>設計人員創作成電音版本,快節奏的混音搭上鋼琴與管弦,在遊戲中享受真是震撼人心阿.
         </div>
         
-        <br>
+       
          
         &nbsp;
      
  <hr size="5" align="center" noshade width="90%" color=" #FFFAF0">       
-    <br>
+   
         
         &nbsp;
 <iframe width="550" height="385" src="https://www.youtube.com/embed/8I01kWRWFmI" frameborder="0" allowfullscreen></iframe>
@@ -63,8 +80,19 @@
         </div>
          <a href="https://www.facebook.com/profile.php?id=100013528865561"><img style='position:relative;left:700px;top:1px;width: 50px;height: 50px;' src="http://www.toca.org.tw/TOCA/_imagecache/fb_icon_325x325%20[1].png" alt="my facebook link" class="smallest-image" align="left"></a>
      <a href="https://github.com/boris10139914"><img style='position:relative;left:20px;top:1px;width: 50px;height: 50px;' src="http://arcaneiceman.github.io/img/mark-github-256.png"></a>
-        
- </center>      
+      
+ </center> 
+    <div style='position:relative;left:730px;top:-20px;'  id="clickme"><h3>相關連結</h3></div>
+<div id="cytus">
+ <div>
+      <button  id="cytus1"  style='position:relative;left:570px;top:-40px;' onclick="location.href='https://www.rayark.com/g/cytus/'">Cytus官網</button>
+          <button  id="cytus2" style='position:relative;left:620px;top:-40px;'  onclick="location.href='https://play.google.com/store/apps/details?id=com.rayark.Cytus.full&hl=zh_TW'">Android下載</button>
+        <button  id="cytus3"  style='position:relative;left:670px;top:-40px;'  onclick="location.href='https://itunes.apple.com/tw/app/cytus/id485246824?l=zh'">ios下載</button>
+   
+     </div>
+</div>
+       
+          
 </body>
 </html>
 
