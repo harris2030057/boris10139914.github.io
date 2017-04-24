@@ -5,21 +5,31 @@
 <html dir="ltr" lang="zh-TW">
 <!--<![endif]-->
 <head>
- <script type="Text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script type='text/javascript'>
-$(function(){
-$("#clickme").click(function(){
-$("#cytus").toggle();
-});
- });
-</script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+   $("#s1").hide();
+     $("#c1").click(function(){
+    $("#s1").slideToggle("slow");
+    $("#c1").hide();
+       });
+     $("#s2").hide();
+     $("#c2").click(function(){
+    $("#s2").slideToggle("slow");
+     $("#c2").hide();
+       });
+    });
+  </script>
 
     
     <title >Cytus歌曲分享By黃元宏
     </title>
     
 <style>
-    
+    b{
+        color:white;
+        font-size: 24px
+    }
     h1{
         color:white;
         font-size: 40px
@@ -55,13 +65,14 @@ $("#cytus").toggle();
          <br>
                 
       &nbsp;
-   
+<b id="c1">點擊查看Parousia介紹</b>
+   <span id="s1">
  <div>
    這首歌原本是協奏曲,Parousia意為上帝再臨,原本莊嚴的曲風後來為Cytus音樂
     </div>
 <div>設計人員創作成電音版本,快節奏的混音搭上鋼琴與管弦,在遊戲中享受真是震撼人心阿.
         </div>
-        
+        </span>
        
          
         &nbsp;
@@ -74,22 +85,24 @@ $("#cytus").toggle();
     <br>
          
         &nbsp;
+        <b id="c2">點擊查看Bloody Purity介紹</b>
+        <span id="s2">
 <div>是來自街機音樂遊戲Mozarc的移植曲,意為殘忍的天真,個人認為曲風給人很有心機的感覺,
         </div>
         <div>後段讓人覺得有種被人算計卻逃不出來的可悲感,不知道大家感受如何,希望各位喜歡.
         </div>
-         <a href="https://www.facebook.com/profile.php?id=100013528865561"><img style='left:600px;width: 50px;height: 50px;' src="http://www.toca.org.tw/TOCA/_imagecache/fb_icon_325x325%20[1].png" alt="my facebook link" class="smallest-image" ></a>
+     </span>
 
  </center> 
    
-<div id="cytus">
- <div>
+
+ <div id="cytus">
       <button  id="cytus1"  style='position:relative;left:430px;top:-10px;' onclick="location.href='https://www.rayark.com/g/cytus/'">Cytus官網</button>
           <button  id="cytus2" style='position:relative;left:480px;top:-10px;'  onclick="location.href='https://play.google.com/store/apps/details?id=com.rayark.Cytus.full&hl=zh_TW'">Android下載</button>
         <button  id="cytus3"  style='position:relative;left:530px;top:-10px;'  onclick="location.href='https://itunes.apple.com/tw/app/cytus/id485246824?l=zh'">ios下載</button>
    
      </div>
-</div>
+
        
           
 </body>
